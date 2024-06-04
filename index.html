@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>JSONPlaceholderTest</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title">JSONPlaceholder[Test]</h1>
+    </header>
+    <main>
+      <section class="actions">
+        <div class="actions__inner container">
+          <div class="actions__inputs">
+            <select name="method" class="select method-select">
+              <option value="GET">GET</option>
+              <option value="POST">POST</option>
+              <option value="PUT">PUT</option>
+              <option value="PATCH">PATCH</option>
+              <option value="DELETE">DELETE</option>
+            </select>
+            <select name="method" class="select entity-select">
+              <option value="posts">Posts</option>
+              <option value="comments">Comments</option>
+              <option value="albums">Albums</option>
+              <option value="photos">Photos</option>
+              <option value="todos">Todos</option>
+              <option value="users">users</option>
+            </select>
+            <input
+              type="number"
+              class="input input-count"
+              value="1"
+              min="1"
+              max="100"
+              title="count"
+            />
+            <input
+              type="number"
+              class="input input-params"
+              value="0"
+              min="0"
+              max="100"
+              title="id"
+            />
+            <button class="button button-clear">Clean</button>
+          </div>
+        </div>
+      </section>
+      <section class="url">
+        <div class="url__inner container">
+          <span class="url-build">[url] / [entity] / [count] ? [params]</span>
+          <div class="url-actions">
+            <p class="url-string">https://jsonplaceholder.typicode.com</p>
+            <button class="button url-button">Send</button>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="info__inner container">
+          <div class="info__content">
+            <textarea
+              id="code"
+              name="code"
+              class="info__area info-content-item"
+              placeholder="Code"
+            ></textarea>
+            <div name="code" class="info__result info-content-item">
+              <p class="info__result-status">000</p>
+              <pre class="info__result-json"></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="scripts/api.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>

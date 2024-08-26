@@ -32,4 +32,4 @@ _Проект є додатком, що робить запити до API JSONP
      
 ## Посилання
 
-  [Додаток]([https://drkr24.github.io/Moncher/](https://drkr24.github.io/JSONPlaceholderTest/)
+  [Додаток](https://drkr24.github.io/Moncher/](https://drkr24.github.io/JSONPlaceholderTest/)
